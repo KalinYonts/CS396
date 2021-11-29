@@ -1,10 +1,10 @@
 ReadMe
 
 Name 
-This Django website project is in the initial phase. At present, the name displayed as the webpage is ‘Kalin Yonts’. When the project is fully-functioning for the intended purpose, the name will be updated accordingly.
+This Django website project is in the second phase. At present, the name displayed as the webpage is ‘Kalin Yonts’. When the project is fully-functioning for the intended purpose, the name will be updated accordingly.
 
 Description
-The website is hosted off of a RaspberryPi and is composed of Django, Python, AWS-S3, Heroku, Bootstrap, HTML/CSS. The author wrote this program using a MacBook Pro and had previously configured the headless RaspberryPi, adjusted network settings, and installed all required programs. 
+The website is locally hosted and is composed of Django, Python, AWS-S3, Bootstrap, HTML/CSS. The author wrote this program using a MacBook Pro and had previously installed the software requirements. 
 
 The website at present has the following functionalities:
 1.	An administrator account. This user can delete other users, delete/edit all posts, create new discussion topics through the admin page. The administrator page is password protected and fully functioning using the built-in Django admin function. 
@@ -14,20 +14,16 @@ The website at present has the following functionalities:
 5.	The number of posts and users is stored in the database and can be viewed by administrators. 
 6.	Link to Google Calendar in the sidebar. The website is dynamic and the sidebar moves if the user is on mobile or changes the size of the view window. 
 7.	Warning messages appear when a user inputs incorrect information or attempts to click something they do not have access to. 
-
-Pre-Installation
-To follow this project exactly, you must meet the following requirements:
-8.	RaspberryPi
-	8.1 Must be running. Author used a headless RPi and connects to the device via the terminal pre-installed on MacOS. 
-	8.2 Network settings must be set to provide the RaspberryPi with a static IP address and user must have ability to connect with the RPi. 
-9.	Software
-	9.1	Once connected to the RaspberryPi, the user will want to install a text-editor, such as vim.
-	9.2	Install Django, Python, Git, Heroku according to respective website instruction
+8. 	The following applications stored in the database and displayed for the user:
+	Activités (Type, Time, Location, Description)
+	Shopping (Item, Quantity, Price, Store, Related Activity)
+	Meeting (Meeting name, ID, # of participants, participant name, meeting files)
+	Health (Doctor name, email, phone number, medicine, dose, dosage time)
 
 
 Installation
 1.	Begin by opening a terminal window. 
-2.	ssh into RaspberryPi and log in to any accounts. For me, I used the local, static IP address I have assigned to my RaspberryPi and logged in with my admin account. 
+2.	cd to file save location
 3.	Create project directory
 kalin@raspberrypi:~ $ mkdir website
 kalin@raspberrypi:~ $ cd website
@@ -70,12 +66,14 @@ Quit the server with CONTROL-C.
 
 12.	Once webpages are written and linked, run the python server. Navigate to the IP address of your RPi and test the website functionality.
 
+13. 	For additional functions added in Phase II, update your files or re-download the source code from the GitHub repository. 
+
 **In the event of errors, refer to the GitHub repository to review the code examples for this project. 
 
 
 
 Usage
-At present, the website is not publicly launched. The website is hosted on a RaspberryPi on a private WIFI network and anyone who wishes to access the Django project must know the IP address and be sure the RaspberryPi is running and the Network access is still open. 
+At present, the website is not publicly launched. The website is hosted on localhost on a private WIFI network and anyone who wishes to access the Django project must be on the machine. 
 
 GitHub
 Project files have been pushed using Git to serve as a reference for this project and as a save file for future edits.
@@ -85,4 +83,4 @@ Kalin Yonts – primary author
 Corey Shafer <https://coreyms.com/development/python/python-django-tutorials-full-series>
 
 Project Status
-The project is in the first phase and contains the functionalities outlined above. 
+The project is in the second phase and contains the functionalities outlined above. 
