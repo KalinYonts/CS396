@@ -1,0 +1,14 @@
+{% extends 'blog/base.html'%} 
+{% block content %}
+<!-- templates/search_results.html -->
+<h1>Search Results</h1>
+
+<ul>
+  {% for post in object_list %}
+    <li>
+      {{ post.title }}, {{ post.date_posted }}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}

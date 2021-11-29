@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'exhlfdat&vfum(-34*c2uroi(($ww(yo$9pv98=e6p^gl(-eoj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'storages'
+    'storages',
+    'cal.apps.CalConfig',
+    'phone_field',
+    'mailer.apps.MailerConfig',
 ]
 
 MIDDLEWARE = [
@@ -133,12 +136,13 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
 
+DEFAULT_FROM_EMAIL = 'kalinyonts@yahoo.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'EMAIL_USER'
-EMAIL_HOST_PASSWORD = 'EMAIL_PASS'
+EMAIL_HOST_USER = 'kalinyonts@yahoo.com'
+EMAIL_HOST_PASSWORD = 'Yonts123!'
 
 AWS_ACCESS_KEY_ID = 'AKIA6BGPIP35HB75NLUJ'
 AWS_SECRET_ACCESS_KEY = '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'
@@ -150,7 +154,14 @@ AWS_DEFAULT_ACL = None
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
 django_heroku.settings(locals())
+
 
 
 

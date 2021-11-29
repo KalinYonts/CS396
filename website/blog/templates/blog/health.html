@@ -1,0 +1,40 @@
+{% extends 'blog/base.html'%} {% block content%}
+<br></br>
+
+<div class = "container">
+  <h1 class= "text-center">Health Information</h1>
+  <br>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Doctor</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Prescriptions</th>
+        <th scope = "col">Dose</th>
+        <th scope = "col">Dose Time</th>
+      </tr>
+    </thead>
+    {% for health in health %}
+    <tbody>
+      <tr>    
+        <td>{{health.doctor_name}}</td>
+        <td>{{health.phone}}</td>
+        <td>{{health.email}}</td>
+        <td>{{health.prescriptions}}</td>
+        <td>{{health.dose}}</td>
+        <td>{{health.dosetime}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+ <td><a href="{% url 'add_health' %}">
+              <input
+                type="submit"
+                value="Add Health Information"
+                class="btn btn-secondary btn"
+                type="button"/>
+              </a></td>
+{% endblock%}

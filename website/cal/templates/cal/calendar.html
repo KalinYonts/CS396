@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+	<div class = "content-section">
+  	<h1 class= "text-center">Calendar</h1>
+  	<br>
+		<a class="btn btn-info left" href="{% url 'calendar' %}?{{ prev_month }}"> Previous Month </a>
+		<a class="btn btn-info right" href="{% url 'calendar' %}?{{ next_month }}"> Next Month </a>
+		<a class="btn btn-info right" href="{% url 'event_new' %}"> New Event </a>
+		<br>
+		<br>
+		<table>
+			{{calendar}}
+		</table>
+	
+	</div>
+
+{% endblock%}
