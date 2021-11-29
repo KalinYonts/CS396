@@ -141,11 +141,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'kalinyonts@yahoo.com'
-EMAIL_HOST_PASSWORD = 'Yonts123!'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
-AWS_ACCESS_KEY_ID = 'AKIA6BGPIP35HB75NLUJ'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
 AWS_STORAGE_BUCKET_NAME = 'kalin-website-files'
 AWS_S3_REGION_NAME = 'us-east-2'
 
