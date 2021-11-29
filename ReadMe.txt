@@ -1,7 +1,7 @@
 ReadMe
 
 Name 
-This Django website project is in the second phase. At present, the name displayed as the webpage is ‘Kalin Yonts’. When the project is fully-functioning for the intended purpose, the name will be updated accordingly.
+This Django website project is in the third phase. At present, the name displayed as the webpage is ‘Kalin Yonts’. When the project is fully-functioning for the intended purpose, the name will be updated accordingly.
 
 Description
 The website is locally hosted and is composed of Django, Python, AWS-S3, Bootstrap, HTML/CSS. The author wrote this program using a MacBook Pro and had previously installed the software requirements. 
@@ -11,14 +11,16 @@ The website at present has the following functionalities:
 2.	Registration and Login function for users. This is stored in the database used by Django. 
 3.	Post features which allows registered users to write new posts, update/delete older posts and view posts written by others. 
 4.	File upload/storage. Users can upload a profile picture to their user profile which is displayed on user posts. 
-5.	The number of posts and users is stored in the database and can be viewed by administrators. 
-6.	Link to Google Calendar in the sidebar. The website is dynamic and the sidebar moves if the user is on mobile or changes the size of the view window. 
-7.	Warning messages appear when a user inputs incorrect information or attempts to click something they do not have access to. 
+5.	The number of posts and users is stored in the database and can be viewed by administrators. Regular users can click usernames of themselves or other users to see all post history by that user. Users can filter to find information from their preferred poster.
+6.	Calendar application that is built into the website so users can add and edit calendaring events. The calendar application is pre-filled with participant information for logged in, registered users and allows them to see other user's appointments. 
+7.	Warning messages appear when a user inputs incorrect information or attempts to click something they do not have access to. Success messages are displayed for users who input information to the database via the user forms. 
 8. 	The following applications stored in the database and displayed for the user:
-	Activités (Type, Time, Location, Description)
+	Activites (Type, Time, Location, Description)
 	Shopping (Item, Quantity, Price, Store, Related Activity)
 	Meeting (Meeting name, ID, # of participants, participant name, meeting files)
 	Health (Doctor name, email, phone number, medicine, dose, dosage time)
+9.	E-mail functionality allows logged in users the ability to send e-mail messages through Gmail STMP and can be used to alert users for any upcoming appointments.
+10. 	Search - the search function allows the user to search the website for any query to find relevant information int the posts. 
 
 
 Installation
