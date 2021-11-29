@@ -68,7 +68,7 @@ Quit the server with CONTROL-C.
 
 12.	Once webpages are written and linked, run the python server. Navigate to the IP address of your RPi and test the website functionality.
 
-13. 	For additional functions added in Phase II, update your files or re-download the source code from the GitHub repository. 
+13. 	For additional functions added in Phase II & III, update your files or re-download the source code from the GitHub repository. https://github.com/KalinYonts/CS396
 
 **In the event of errors, refer to the GitHub repository to review the code examples for this project. 
 
@@ -85,4 +85,4 @@ Kalin Yonts – primary author
 Corey Shafer <https://coreyms.com/development/python/python-django-tutorials-full-series>
 
 Project Status
-The project is in the second phase and contains the functionalities outlined above. 
+The project is in the third phase and contains the functionalities outlined above. 
